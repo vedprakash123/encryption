@@ -1,0 +1,5 @@
+#Encrypt/Decrypt Service
+services:
+  encryption.encryption:
+    class: Drupal\encryption\Services\DataEncryptionService
+    arguments: ['@state', '@logger.factory']

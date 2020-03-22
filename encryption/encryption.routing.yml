@@ -1,0 +1,19 @@
+#Encryption Key Settings Page
+encryption.settings:
+  path: '/admin/config/key/settings'
+  defaults:
+    _form: '\Drupal\encryption\Form\EncryptionKeySettingsForm'
+    _title: 'Key Settings'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+    
+#Encryption Sample Page
+encryption.demo:
+  path: '/demo/crypto'
+  defaults:
+    _form: '\Drupal\encryption\Form\EncryptDecryptForm'
+    _title: 'Encrypt/Decrypt Demo'
+  requirements:
+    _permission: 'access content'    
